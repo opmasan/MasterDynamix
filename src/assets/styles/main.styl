@@ -1,0 +1,58 @@
+html 
+body
+	color #0d0d0d
+	font-size 21px
+	font-weight 500
+	line-height 1.5
+	font-family futura
+body
+
+*
+	box-sizing border-box
+	
+.container
+	max-width 100%
+	margin 0 auto
+	@media lg
+		max-width 960px
+	@media xl
+		max-width 1170px
+	@media xxl
+		max-width 1530px
+a 
+	&,
+	&:active,	
+	&:focus,	
+	&:hover,	
+	&:visited
+		text-decoration none
+		cursor pointer
+		
+button
+	outline none
+
+.title-section
+	margin-bottom 2em
+
+
+.clearfix
+	&::after
+		content: ''
+		clear both
+		display table
+		overflow hidden
+.section
+	text-align center
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span
+	background color-green
+
+#fp-nav ul li .fp-tooltip
+	color color-green
+
+.fp-controlArrow
+	&.fp-next
+		right 200px
+	&.fp-prev
+		left 200px

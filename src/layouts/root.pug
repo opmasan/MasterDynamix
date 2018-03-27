@@ -1,0 +1,21 @@
+include ../../node_modules/bemto.pug/bemto
+
+include ../globals/common
+include ../globals/data/brands-images
+include ../globals/data/hair-services
+include ../globals/data/menuItems
+include ../blocks/all
+
+block params
+	- var pageTitle = ""
+	- var activeMenuIndex = 0
+
+doctype html
+html
+	head
+		title= pageTitle
+		block meta
+		block styles
+	body
+		block main
+		block scripts

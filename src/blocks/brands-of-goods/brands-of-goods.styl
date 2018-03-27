@@ -1,0 +1,32 @@
+
+.brands-of-goods
+  padding-top 90px
+  display flex
+  flex-direction column
+  width 100%
+  *
+    box-sizing border-box
+  &__row
+    width 100%
+    margin 0 auto
+    display flex
+    flex-wrap wrap
+    padding 30px 15px
+    justify-content center
+    @media xl
+      width 1070px
+      padding 80px 15px
+
+  &__item
+    display flex
+    align-items center
+    justify-content center
+    padding 15px
+    flex: 0 0 100%;
+    height 130px
+    @media sm
+      flex: 0 0 50%;
+    @media lg
+      flex: 0 0 33%
+    @media xl
+      flex: 0 0 25%

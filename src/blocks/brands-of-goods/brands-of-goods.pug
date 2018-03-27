@@ -1,0 +1,12 @@
+
+mixin b-brands-of-goods(brandsImages)
+  +b('section').brands-of-goods
+    //+b-headline({
+    //    label: 'Бренды  c которыми работаем',
+    //    title: 'Бренды товаров',
+    //    subtitle: 'Мы заботимся о красоте наших клиентов и передаем знания'
+    //})
+    +e.row
+      each brand in brandsImages
+        +e(a).item(href= brand.url)
+          +e('img').img(src= brand.img, title= brand.title)

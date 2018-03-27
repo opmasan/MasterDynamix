@@ -1,0 +1,14 @@
+extends root
+
+block styles
+	link(rel="stylesheet" href=asset("styles.css"))
+
+block scripts
+	script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js")
+	script(src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js")
+	script(src=asset("main.js"))
+	script(src=asset("blocks.js"))
+
+block main
+	block content

@@ -1,0 +1,85 @@
+.headline
+	text-align center
+	line-height normal
+	
+	&_secondary-bg-color
+		background-color mine-shaft
+	
+	&__label-title
+	&__title
+		font-family playfair
+		font-weight 400
+	
+	&__label-title
+		position relative
+		color: mainColor
+		font-size 20px
+		font-style: italic
+		
+		@media only screen and (max-width: smWidth - 1)
+			font-size 16px
+
+		&::before
+			content: "—"
+			margin-right .5em
+			
+		&_align-left
+			text-align left
+			
+		&_align-right
+			text-align right
+			
+		&_align-center
+			text-align center
+			
+		&_color-white
+			color white
+			
+	&__title
+		margin-bottom .15em
+		font-size 52px
+		
+		&_align-left
+			text-align left
+			
+		&_align-right
+			text-align right
+		
+		&_align-center
+			text-align center
+			
+		&_color-white
+			color white
+			
+		@media only screen and (max-width: lgWidth - 1)
+			font-size 44px
+			
+		@media only screen and (max-width: smWidth - 1)
+			font-size 30px
+
+		
+	&__subtitle
+		font-family futura
+		color dove-gray
+		line-height normal
+		text-align center
+		margin-bottom 30px
+		font-size 18px
+		
+		@media only screen and (max-width: smWidth - 1)
+			font-size 16px
+		
+		&_align-left
+			text-align left
+			
+		&_align-right
+			text-align right
+			
+		&_align-center
+			text-align center
+			
+		&_color-white
+			color white
+		
+		&_color-grey
+			color: dove-gray

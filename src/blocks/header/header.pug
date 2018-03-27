@@ -1,0 +1,8 @@
+mixin b-header(menuItems)
+  +b.header
+    +e.logo MasterDynamix
+    +e(ul).menu
+      each item in menuItems
+        li
+          +e(a).item(href= item.url)
+            =item.title

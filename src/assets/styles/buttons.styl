@@ -1,0 +1,40 @@
+.button
+	position relative
+	display inline-block
+	cursor pointer
+	font-size 10px
+	font-family futura-heavy
+	text-transform uppercase
+	text-align center
+	line-height 1
+.button_full
+	@extend .button
+	color white
+	background-color sandal
+	padding 28px 45px 29px
+	transition background-color .3s
+	border 0
+	&:hover
+		background-color darken(sandal, 20%)
+.button_empty
+	@extend .button
+	position relative
+	color black
+	background-color transparent
+	border 1px solid sandal
+	padding 26px 45px 27px
+	&:before
+		content ''
+		position absolute
+		width 25px
+		top 50%
+		display block
+		height 1px
+		background-color sandal
+		left -12.5px
+		transition left .3s
+		z-index 1
+	&:hover
+		color sandal
+		&:before
+			left calc(100% - 13.5px)
