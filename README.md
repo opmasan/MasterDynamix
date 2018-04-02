@@ -1,4 +1,4 @@
 # MasterDynamix
 gulp
 pug
-sass
+stylus

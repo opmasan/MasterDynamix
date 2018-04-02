@@ -1,6 +1,7 @@
 mixin b-header(menuItems)
   +b.header
-    +e.logo MasterDynamix
+    +e.logo
+      img(src="assets/images/MasterDynamix_Logo.svg")
     +e(ul).menu
       each item in menuItems
         li
