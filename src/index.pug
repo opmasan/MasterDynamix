@@ -7,25 +7,27 @@ append params
 
 block content
 	+b-header(headerMenu)
-	#fullpage
-		#section-video.section
-			video#myVideo(loop='', muted='', data-autoplay='')
-				source(src='assets/images/coding.mp4', type='video/mp4')
-			.layer
-				h1 Qualified software development services
-		#section1.section
-			#slide1.slide
-				h1 Slide Backgrounds 1
-			#slide2.slide
-				h1 Slide Backgrounds 2
-		#section2.section
-			h1
-				| Section
-				br
-				| Three
-		#section3.section
-			h1 Brands
-			+b-brands-of-goods(brandsImages)
-		#section4.section
-			h1(style='color: #333') Footer
+	#barba-wrapper
+		.barba-container
+			#fullpage
+				#section-video.section
+					video#myVideo(loop='', muted='', data-autoplay='')
+						source(src='assets/images/coding.mp4', type='video/mp4')
+					.layer
+						h1 Qualified software development services
+				#section1.section
+					#slide1.slide
+						h1 Slide Backgrounds 1
+					#slide2.slide
+						h1 Slide Backgrounds 2
+				#section2.section
+					h1
+						| Section
+						br
+						| Three
+				#section3.section
+					h1 Brands
+					+b-brands-of-goods(brandsImages)
+				#section4.section
+					h1(style='color: #333') Footer
 
