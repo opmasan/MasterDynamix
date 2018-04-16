@@ -2,32 +2,50 @@ extends layouts/main
 
 
 append params
-	- pageTitle = "MasterDynamix"
-	- activeMenuIndex = 0
+  - pageTitle = "MasterDynamix"
+  - activeMenuIndex = 0
 
 block content
-	+b-header(headerMenu)
-	#barba-wrapper
-		.barba-container
-			#fullpage
-				#section-video.section
-					video#myVideo(loop='', muted='', data-autoplay='')
-						source(src='assets/images/coding.mp4', type='video/mp4')
-					.layer
-						h1 Qualified software development services
-				#section1.section
-					#slide1.slide
-						h1 Slide Backgrounds 1
-					#slide2.slide
-						h1 Slide Backgrounds 2
-				#section2.section
-					h1
-						| Section
-						br
-						| Three
-				#section3.section
-					h1 Brands
-					+b-brands-of-goods(brandsImages)
-				#section4.section
-					h1(style='color: #333') Footer
+  +b-header(headerMenu)
+  #fullpage
+    +b-main-video()
+    .section
+      h2 Your success is the key
+
+      p Here at MasterDynamix we prefer a long-term partnership with our clients. Focusing on your business goals helps us better understand the keys to your project's success
+
+      p 'Reach us' to get more details
+    .section
+      h1 Our team
+      //#slide1.slide
+      //	h1 Slide Backgrounds 1
+      //#slide2.slide
+      //	h1 Slide Backgrounds 2
+      p Lets you forget about the tech hazzle
+      p Helps you to bring your ideas from scratch to live version
+      p Can help with your live product
+      p Consults you on the correctness of your tech decisions
+    .section
+      h1 Brands
+      +b-brands-of-goods(brandsImages)
+    .section
+      .footer-block
+        .flex-around-row
+          //form
+          //  input(type='text')
+          //  input(type='text')
+          //  textarea
+          //  a.btn-main Reach Us
+        h1 Contacts
+        .flex-between-row
+          div sales@masterdynamix.com
+          .social-links
+            a(href='')
+              .fab.fa-2x.fa-facebook-square
+            a(href='')
+              .fab.fa-2x.fa-linkedin
+            a(href='')
+              .fab.fa-2x.fa-google-plus-square
+        .flex-around-row
+          div &copy 2018 masterdynamix.com
 

@@ -1,2 +1,31 @@
-.main-video
-	display block
+.section-video
+	overflow hidden
+	#myVideo
+		position absolute
+		right 0
+		bottom 0
+		top 0
+		width 100%
+		height 100%
+		background-color black
+		background-position center center
+		background-size contain
+		object-fit cover
+		z-index 3
+	.layer
+		position absolute
+		top 0
+		z-index 4
+		width 100%
+		height 100%
+		display flex
+		align-items flex-end
+		justify-content center
+		padding-bottom 30px
+		-webkit-transform translate3d(0,0,0)
+		-ms-transform translate3d(0,0,0)
+		transform translate3d(0,0,0)
+
+video
+	&::-webkit-media-controls
+		display none !important

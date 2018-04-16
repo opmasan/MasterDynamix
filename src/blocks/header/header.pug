@@ -1,9 +1,8 @@
 mixin b-header(menuItems)
   +b.header
     +e.logo
-      img(src="assets/images/MasterDynamix_Logo.svg")
     +e(ul).menu
       each item in menuItems
         li
-          +e(a).item(href= item.url)
+          +e(a).item.link-effect(href= item.url)
             =item.title

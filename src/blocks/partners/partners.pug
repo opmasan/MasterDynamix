@@ -1,0 +1,52 @@
+mixin b-partners()
+
+	#fullpage-partners
+		.section
+			+b.partners
+				+e.name
+					+e('a').link.link-effect(href='#')
+						h2 FreeHomeRisk
+				+e.block
+					+e('h4').title About
+					p Our client requested to create a platform which is capable of checking any address or property on the territory of the USA. The system should return the results of various natural hazards and man-made risks for every property.
+				+e.block
+					+e('h4').title The challenge
+					p The system should:
+					+e('ul').list
+						li Run on  Big Data, using the complex algorithms to calculate the level of risks and hazards
+						li Have a Freemium model
+						li Geocode any given US-based address
+						li Have a robust API to deliver data to other platforms and services
+						li Have a batch processor which is capable to run and check thousands of addresses
+
+				+e.block
+					+e('h4').title The solution
+					+e('ul').list
+						li The combination of Ruby on Rails application and PostgreSQL + PostGIS databases helped us to create an easy-to-maintain platform which processes the Big Data smoothly
+						li Integrated third-party services let us perform geocoding, receive the coordinates' elevation and distances and obtain the property information
+						li Our RESTful API delivers the full set of parameters to any integrated platform
+
+		.section
+			+b.partners
+				+e.block
+					a.link-effect(href='#')
+						h2 HazardHub
+
+				+e.block
+					+e('h4').title About
+					p Our client requested to create a company website which describes their business model and services
+				+e.block
+					+e('h4').title The challenge
+					p The system should:
+					+e('ul').list
+						li The existing website should be completely redesigned
+						li Create a couple of widgets which will let any user check any address for specific parameters. The widgets should be integrated with another existing platform
+						li The scope of works for the website development should be minimised
+						li The website should be easy-to-maintain and administrate
+
+
+				+e.block
+					+e('h4').title The solution
+					+e('ul').list
+						li The new version of the website was built on a WordPress CMS platform
+						li The widgets were created with PHP programming language and successfully integrated with another platform

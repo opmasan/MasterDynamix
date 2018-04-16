@@ -1,6 +1,7 @@
 // Copyright: CSSSR
 // https://github.com/CSSSR/csssr-project-template
 // Скрипт для создания нового BEM-блока. Разработано в CSSSR
+// node block block-name
 
 
 'use strict';

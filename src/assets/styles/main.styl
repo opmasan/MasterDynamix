@@ -1,7 +1,7 @@
 html 
 body
 	color #0d0d0d
-	font-size 21px
+	font-size 20px
 	font-weight 500
 	line-height 1.5
 	font-family futura
@@ -27,12 +27,31 @@ a
 	&:visited
 		text-decoration none
 		cursor pointer
-		
+
+a
+	position: relative
+	color: inherit
+	text-decoration: none
+	&:before, &:after
+		content: ''
+		position: absolute
+		transition: transform .3s ease
+
+.link-effect
+	display: inline-block
+	overflow: hidden
+	&:before
+		left: -1px
+		bottom: 0
+		width: 100%
+		height: 3px
+		background-color: color-green
+		transform: translateX(-100%)
+	&:hover:before
+		transform: translateX(0)
+
 button
 	outline none
-
-.title-section
-	margin-bottom 2em
 
 
 .clearfix
@@ -41,8 +60,6 @@ button
 		clear both
 		display table
 		overflow hidden
-.section
-	text-align center
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span
@@ -56,3 +73,10 @@ button
 		right 200px
 	&.fp-prev
 		left 200px
+
+.flex-around-row
+	display flex
+	justify-content space-around
+.flex-between-row
+	display flex
+	justify-content space-between
