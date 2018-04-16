@@ -7,8 +7,8 @@ $('#fullpage').fullpage({
     lockAnchors: true,
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     navigation: true,
-    navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'Footer'],
-    showActiveTooltip: true,
+    navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'Reach Us'],
+    showActiveTooltip: false,
     menu: '#menu',
     sectionsColor: ['#fff',  '#f5f5f5', '#e5e5e5', '#fff', '#fff']
 });
