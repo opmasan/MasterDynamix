@@ -6,7 +6,7 @@ append params
   - activeMenuIndex = 0
 
 block content
-  +b-header(headerMenu)
+  +b-header(headerMenu, activeMenuIndex)
   #fullpage
     +b-main-video()
     .section
@@ -32,6 +32,8 @@ block content
         h1 Brands
         +b-brands-of-goods(brandsImages)
     .section
+      +b-tech()
+    .section
       .footer-block
         .flex-around-row
           //form
@@ -47,8 +49,6 @@ block content
               .fab.fa-2x.fa-facebook-square
             a(href='')
               .fab.fa-2x.fa-linkedin
-            a(href='')
-              .fab.fa-2x.fa-google-plus-square
         .flex-around-row
           div &copy 2018 masterdynamix.com
 

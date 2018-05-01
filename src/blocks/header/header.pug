@@ -1,8 +1,10 @@
-mixin b-header(menuItems)
+mixin b-header(menuItems, activeMenuIndex)
   +b.header
     +e.logo
     +e(ul).menu
-      each item in menuItems
+      each item, index in menuItems
+        - var classes = ''
         li
-          +e(a).item.link-effect(href= item.url)
-            =item.title
+          if index == activeMenuIndex
+            - classes = 'active'
+          +e(a).item.link-effect(href= item.url, class=classes)=item.title

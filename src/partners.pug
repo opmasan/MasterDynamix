@@ -3,8 +3,8 @@ extends layouts/main
 
 append params
 	- pageTitle = "MasterDynamix"
-	- activeMenuIndex = 0
+	- activeMenuIndex = 1
 
 block content
-	+b-header(headerMenu)
+	+b-header(headerMenu, activeMenuIndex)
 	+b-partners()
