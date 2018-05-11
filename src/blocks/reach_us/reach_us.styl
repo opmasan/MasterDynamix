@@ -1,0 +1,211 @@
+// extends
+.animate {
+	transition all 0.3s
+}
+.reach-us {
+	* {
+		outline none
+	}
+	::-webkit-input-placeholder{
+		color: rgba(255,255,255, 0.8);
+	}
+	::-moz-placeholder{
+		color: rgba(255,255,255, 0.8);
+	}
+	:-ms-input-placeholder{
+		color: rgba(255,255,255, 0.8);
+	}
+	:-moz-placeholder {
+		color: rgba(255,255,255, 0.8);
+	}
+	form,
+	label,
+	input {
+		display block
+	}
+	textarea {
+		width 100%
+		min-width 100%
+		max-width 100%
+		min-height 100px
+	}
+	// main styles
+	main {
+		display block
+		width 100%
+		height 100%
+		position absolute
+		top 0
+		left 0
+		z-index 10
+	}
+
+	.main-heading {
+		line-height 100%
+		font-weight 600
+		font-size 2em
+		text-transform uppercase
+	}
+
+	.btn {
+		display block
+		height 50px
+		line-height 50px
+		border 0
+		text-align center
+		cursor pointer
+		border-radius 5px
+		font-size 0.7em
+		@extend .animate
+
+		span {
+			font-weight 600
+			font-size 1em
+			text-transform uppercase
+			@extend .animate
+		}
+
+		&:not(.btn-outline) {
+			background-color #fff
+
+			span {
+				color #666
+			}
+
+			&:hover {
+				background-color #f7f7f7
+			}
+		}
+
+		&.btn-outline {
+			background-color transparent
+			border 1px solid #fff
+
+			span {
+				color #fff
+			}
+
+			&:hover {
+				background-color #fff
+
+				span {
+					color color-green
+				}
+			}
+		}
+	}
+
+	.popup-trigger {
+		width 175px
+		margin auto
+		position absolute
+		top 0
+		bottom 0
+		left 0
+		right 0
+		box-shadow 0 0 25px 0 rgba(0, 0, 0, .05)
+	}
+
+	.overlay {
+		width 100%
+		height 100%
+		overflow auto
+		float left
+		position fixed
+		top 0
+		left 0
+		z-index 5
+		opacity 0
+		transform translateY(100vh)
+		transition opacity 0.5s, transform 0.5s, z-index 0s 0.5s
+
+		.overlay-background {
+			background-color rgba(94, 166, 53, .95)
+			width 100%
+			height 100%
+			position absolute
+			top 0
+			left 0
+			z-index 5
+		}
+
+		.overlay-content {
+			width 100%
+			max-width 530px
+			margin 100px auto 0
+			padding 0 15px
+			color #fff
+			position relative
+			z-index 10
+			@extend .animate
+
+			.overlay-close {
+				display block
+				font-size 2em
+				cursor pointer
+				position absolute
+				top 0
+				right 15px
+				@extend .animate
+
+				&:hover {
+					opacity .8
+				}
+			}
+
+			.signup-form {
+				margin-top 35px
+
+				label {
+					line-height 100%
+					margin-bottom 5px
+					font-size 1em
+				}
+
+				input,
+				textarea {
+					background-color transparent
+					width 100%
+					height 40px
+					margin-bottom 20px
+					padding 10px
+					border 1px solid rgba(254, 254, 254, .3)
+					border-radius 5px
+					color #fff
+					font-size 1em
+					@extend .animate
+
+					&:hover,
+					&:focus {
+						border-color #fff
+					}
+				}
+
+				.submit-btn {
+					width 150px
+				}
+			}
+		}
+
+		&.open {
+			z-index 15
+			opacity 1
+			transform translateY(0)
+			transition opacity 0.5s, transform 0.5s, z-index 0s
+		}
+
+		&.short .overlay-content {
+			margin 30px auto
+		}
+	}
+
+	@media (max-width 600px) {
+
+		.overlay .overlay-content {
+			margin 25px auto
+		}
+	}
+	#thankyou_message {
+		margin-top 30px
+	}
+}

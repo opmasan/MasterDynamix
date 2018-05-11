@@ -7,4 +7,6 @@ mixin b-header(menuItems, activeMenuIndex)
         li
           if index == activeMenuIndex
             - classes = 'active'
-          +e(a).item.link-effect(href= item.url, class=classes)=item.title
+          +e(a).item.link-effect(href= item.url, class=classes, id=item.id ? item.id : '')=item.title
+
+  +b-reach-us()

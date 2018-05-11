@@ -1,3 +1,4 @@
+
 var $ = require('jquery');
 var fullpage = require('fullpage.js');
 // var Barba = require('barba.js');
@@ -24,6 +25,7 @@ $('#fullpage-partners').fullpage({
     sectionsColor: ['#fff',  '#f7f7f7']
 });
 console.log('main');
+
 // Barba.Dispatcher.on('newPageReady', function(current, prev, container) {
 //     if ( $( 'html' ).hasClass( 'fp-enabled' ) ) {
 //         $.fn.fullpage.destroy('all');

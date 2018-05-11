@@ -24,16 +24,17 @@
   &__menu
     display flex
     list-style-type none
-    a
-      color:  #0d0d0d
-      //text-shadow 0.5px -0.5px 0 color-green
-      font-weight 600
-      font-size 1.3em
-      display block
-      line-height 30px
-      height 36px
-      margin 0 0 0 30px
-      &.link-effect
-        &:before
-          height 2px
-          background-color #0d0d0d
+  &__item
+    @extend a;
+    color:  #0d0d0d
+    //text-shadow 0.5px -0.5px 0 color-green
+    font-weight 600
+    font-size 1.3em
+    display block
+    line-height 30px
+    height 36px
+    margin 0 0 0 30px
+    &.link-effect
+      &:before
+        height 2px
+        background-color #0d0d0d
