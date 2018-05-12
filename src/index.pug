@@ -9,24 +9,22 @@ block content
   +b-header(headerMenu, activeMenuIndex)
   #fullpage
     +b-main-video()
-    .section
-      .container
-        h2 Your success is the key
+    .section.key-to-success
+        .container
+          .row
+            .col-md-12
+                h2 Your success is the key
+                p Here at MasterDynamix we prefer a long-term partnership with our clients.
+                p Focusing on your business goals helps us better understand the keys to your project's success.
 
-        p Here at MasterDynamix we prefer a long-term partnership with our clients. Focusing on your business goals helps us better understand the keys to your project's success
-
-        p 'Reach us' to get more details
+            .col-md-12
+              .padding-top-lg
+                a.btn.btn-main Reach us
+                |  to get more details
     .section
       .container
         h1 Our team
-        //#slide1.slide
-        //	h1 Slide Backgrounds 1
-        //#slide2.slide
-        //	h1 Slide Backgrounds 2
-        p Lets you forget about the tech hazzle
-        p Helps you to bring your ideas from scratch to live version
-        p Can help with your live product
-        p Consults you on the correctness of your tech decisions
+        +b-slider(teamSlides)
     .section
       .container
         h1 Brands

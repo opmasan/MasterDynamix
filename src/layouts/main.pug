@@ -2,6 +2,8 @@ extends root
 
 block styles
 	link(rel="stylesheet" href=asset("styles.css"))
+	link(rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+
 
 block scripts
 
@@ -9,6 +11,7 @@ block scripts
 	//script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
 	//script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js")
 	//script(src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js")
+	script(src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript" )
 	script(defer='', src='https://use.fontawesome.com/releases/v5.0.10/js/all.js', integrity='sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+', crossorigin='anonymous')
 
 	script(src=asset("main.js"))

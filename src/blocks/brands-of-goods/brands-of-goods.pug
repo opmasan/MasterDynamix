@@ -1,5 +1,5 @@
 
-mixin b-brands-of-goods(brandsImages)
+mixin b-brands-of-goods(brands)
   +b('section').brands-of-goods
     //+b-headline({
     //    label: 'Бренды  c которыми работаем',
@@ -7,6 +7,6 @@ mixin b-brands-of-goods(brandsImages)
     //    subtitle: 'Мы заботимся о красоте наших клиентов и передаем знания'
     //})
     +e.row
-      each brand in brandsImages
+      each brand in brands
         +e(a).item(href= brand.url)
           +e('img').img(src= brand.img, title= brand.title)

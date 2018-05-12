@@ -1,0 +1,7 @@
+mixin b-slider(slides)
+	+b.slider
+		each slide in slides
+			div
+				+e.item
+					+e('img').image(src= slide.img, title= slide.title)
+					h1= slide.title
