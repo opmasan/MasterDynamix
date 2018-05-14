@@ -26,21 +26,20 @@ block content
         h1 Our team
         +b-slider(teamSlides)
     .section
-      .container
-        h1 Brands
-        +b-brands-of-goods(brandsImages)
-    .section
       +b-tech()
     .section
       .footer-block
-        .flex-around-row
-        h1 Contacts
-        .flex-between-row
-          div sales@masterdynamix.com
-          .social-links
-            a(href='')
-              .fab.fa-2x.fa-facebook-square
-            a(href='')
-              .fab.fa-2x.fa-linkedin
-        .flex-around-row
-          div &copy 2018 masterdynamix.com
+        .wrapper
+          .offset-md-3.col-md-6
+            +b-reach-us-form(class="dark")
+        .wrapper.padding-top-md
+          h1 Contacts
+          .flex-between-row
+            div sales@masterdynamix.com
+            .social-links
+              a(href='')
+                .fab.fa-2x.fa-facebook-square
+              a(href='')
+                .fab.fa-2x.fa-linkedin
+          .flex-around-row
+            div &copy 2018 masterdynamix.com

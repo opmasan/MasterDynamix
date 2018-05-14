@@ -1,0 +1,14 @@
+mixin b-reach-us-form()
+	h1.main-heading reach us
+	form#gform.signup-form(
+		class!=attributes.class,
+		method="post",
+		action="https://script.google.com/macros/s/AKfycbxkT2Izj7bF1MNnlq9Q_K_YMfUATGmcnbLjhSO9/exec"
+	)
+		input#reachUsName(type="text",name="name", placeholder="Name",autocomplete="off")
+		input#reachUsEmail(type="email",name="email", placeholder="Email Address", autocomplete="off")
+		textarea(name="message", placeholder="Tell us about your idea")
+		button.btn.btn-outline.submit-btn: span Submit
+	#thankyou_message(style='display:none;')
+		h2
+			em Thanks for contacting us! We will get back to you soon!

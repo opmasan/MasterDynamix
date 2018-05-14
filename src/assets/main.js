@@ -17,6 +17,7 @@ $('#fullpage').fullpage({
         jQuery('.slider').slick({
             dots: true,
             infinite: true,
+            speed: 600,
             autoplay: true,
             autoplaySpeed: 4000,
         });
