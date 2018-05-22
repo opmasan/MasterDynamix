@@ -7,9 +7,9 @@ var fullpage = require('fullpage.js');
 $('#fullpage').fullpage({
     verticalCentered: true,
     lockAnchors: true,
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    anchors: ['1', '2', '3', '4', 'last'],
     navigation: true,
-    navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'Reach Us'],
+    navigationTooltips: ['MasterDynamix', 'Success Key', 'We Can', 'Our Expertise', 'Reach Us'],
     showActiveTooltip: false,
     menu: '#menu',
     sectionsColor: ['#fff',  '#f5f5f5', '#e5e5e5', '#fff', '#fff'],
@@ -17,22 +17,29 @@ $('#fullpage').fullpage({
         jQuery('.slider').slick({
             dots: true,
             infinite: true,
-            speed: 600,
+            speed: 650,
             autoplay: true,
             autoplaySpeed: 4000,
+
         });
+    },
+    afterLoad: function(anchorLink){
+        //using anchorLink
+        // if(anchorLink == '4'){
+        //     jQuery('.footer-block').css('display', 'flex');
+        // }
     }
 });
 
 $('#fullpage-partners').fullpage({
-    verticalCentered: true,
+    verticalCentered: false,
     lockAnchors: true,
-    anchors: ['FreeHomeRisk', 'HazardHub'],
+    anchors: ['FreeHomeRisk', 'HazardHub', 'TrueReviewCasino'],
     navigation: true,
-    navigationTooltips: ['FreeHomeRisk', 'HazardHub'],
+    navigationTooltips: ['FreeHomeRisk', 'HazardHub', 'TrueReviewCasino'],
     showActiveTooltip: true,
     menu: '#menu',
-    sectionsColor: ['#fff',  '#f7f7f7']
+    sectionsColor: ['#fff',  '#f7f7f7', '#fff'],
 });
 console.log('main');
 

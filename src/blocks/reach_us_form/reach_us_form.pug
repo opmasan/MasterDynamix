@@ -3,7 +3,7 @@ mixin b-reach-us-form()
 	form#gform.signup-form(
 		class!=attributes.class,
 		method="post",
-		action="https://script.google.com/macros/s/AKfycbxkT2Izj7bF1MNnlq9Q_K_YMfUATGmcnbLjhSO9/exec"
+		action!=attributes.action
 	)
 		input#reachUsName(type="text",name="name", placeholder="Name",autocomplete="off")
 		input#reachUsEmail(type="email",name="email", placeholder="Email Address", autocomplete="off")

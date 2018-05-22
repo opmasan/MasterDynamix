@@ -13,13 +13,13 @@ block content
         .container
           .row
             .col-md-12
-                h2 Your success is the key
+                h1 Your success is the key
                 p Here at MasterDynamix we prefer a long-term partnership with our clients.
                 p Focusing on your business goals helps us better understand the keys to your project's success.
 
             .col-md-12
               .padding-top-lg
-                a.btn.btn-main Reach us
+                a.btn.btn-main(data-open='popup-trigger') Reach us
                 |  to get more details
     .section
       .container
@@ -29,17 +29,21 @@ block content
       +b-tech()
     .section
       .footer-block
-        .wrapper
-          .offset-md-3.col-md-6
-            //+b-reach-us-form(class="dark")
-        .wrapper.padding-top-md
-          h1 Contacts
-          .flex-between-row
-            div sales@masterdynamix.com
-            .social-links
-              a(href='')
-                .fab.fa-2x.fa-facebook-square
-              a(href='')
-                .fab.fa-2x.fa-linkedin
-          .flex-around-row
-            div &copy 2018 masterdynamix.com
+        .container
+          .wrapper.padding-top-xl
+            .offset-md-3.col-md-6
+              +b-reach-us-form(class="dark", action="https://script.google.com/macros/s/AKfycbxkT2Izj7bF1MNnlq9Q_K_YMfUATGmcnbLjhSO9/exec")
+        .container
+          .padding-top-lg
+            //h1 Contacts
+            .flex-between-row
+              div
+                .social-links
+                  a(href='https://www.linkedin.com/company/28151541/')
+                    .fab.fa-2x.fa-linkedin
+                  a(href='mailto:sales@masterdynamix.com')
+                    .fas.fa-2x.fa-envelope-square
+                  //a(href='')
+                  //  .fab.fa-2x.fa-facebook-square
+                //div sales@masterdynamix.com
+              div &copy 2018 masterdynamix.com

@@ -3,4 +3,12 @@ mixin b-main-video()
 		video#myVideo(loop='', muted='', data-autoplay='')
 			source(src='https://d2ezlykacdqcnj.cloudfront.net/office-typing-side-on/office-typing-side-on.mp4', type='video/mp4')
 		.layer
-			h1 Qualified software development services
+			.flex-column
+				h1 Qualified software development services
+				#arrowAnim
+					.arrowSliding
+						.fas.fa-chevron-down
+					.arrowSliding.delay1
+						.fas.fa-chevron-down
+					.arrowSliding.delay2
+						.fas.fa-chevron-down

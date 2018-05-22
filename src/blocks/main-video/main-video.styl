@@ -29,3 +29,45 @@
 video
 	&::-webkit-media-controls
 		display none !important
+
+//animation arrow
+
+#arrowAnim
+	height 40px
+	display flex
+	justify-content center
+	align-items center
+
+.arrowSliding
+	position absolute
+	-webkit-animation slide 3s linear infinite
+	animation slide 3s linear infinite
+	opacity 0
+
+.delay1
+	-webkit-animation-delay 1s
+	animation-delay 1s
+
+.delay2
+	-webkit-animation-delay 2s
+	animation-delay 2s
+
+.delay3
+	-webkit-animation-delay 3s
+	animation-delay 3s
+
+@keyframes slide
+		0%
+			opacity 0
+			transform translateY(-15px)
+		20%
+			opacity 1
+			transform translateY(-9px)
+
+		80%
+			opacity 1
+			transform translateY(9px)
+
+		100%
+			opacity 0
+			transform translateY(15px)

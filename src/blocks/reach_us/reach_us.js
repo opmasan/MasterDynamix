@@ -21,7 +21,7 @@
             return $('#overlay-background').height(calculateHeight());
         });
         $(window).trigger('resize');
-        $('#popup-trigger').click(function() {
+        $('a[data-open="popup-trigger"]').click(function() {
             return $('#overlay').addClass('open').find('.signup-form input:first').select();
         });
         return $('#overlay-background, #overlay-close').click(function() {
