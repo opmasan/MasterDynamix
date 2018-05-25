@@ -25,9 +25,12 @@ $('#fullpage').fullpage({
     },
     afterLoad: function(anchorLink){
         //using anchorLink
-        // if(anchorLink == '4'){
-        //     jQuery('.footer-block').css('display', 'flex');
-        // }
+        if(anchorLink == 'last'){
+            // jQuery('.footer-block').css('display', 'flex');
+            $('*[data-open="popup-trigger"]').addClass('not-active')
+        } else {
+            $('*[data-open="popup-trigger"]').removeClass('not-active')
+        }
     }
 });
 

@@ -29,13 +29,17 @@
   &__item
     @extend a;
     color:  #0d0d0d
-    //text-shadow 0.5px -0.5px 0 color-green
     font-weight 600
     font-size 1.3em
     display block
     line-height 30px
     height 36px
     margin 0 0 0 30px
+    &.not-active
+      pointer-events none
+      cursor default
+      text-decoration none
+      color rgba(1,1,1, 0.4)
     &.link-effect
       &:before
         height 2px

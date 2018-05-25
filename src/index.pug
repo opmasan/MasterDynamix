@@ -19,12 +19,20 @@ block content
 
             .col-md-12
               .padding-top-lg
-                a.btn.btn-main(data-open='popup-trigger') Reach us
+                a.btn.btn-main(data-open='popup-trigger', style='margin-right: 5px;') Reach us
                 |  to get more details
     .section
       .container
         h1 Our team
         +b-slider(teamSlides)
+    .section
+      .container
+        h1 Our team
+        .row.padding-top-lg
+          each block in teamSlides
+            .col-md-3.we-can-block
+              i(class=block.icon)
+              h3=block.title
     .section
       +b-tech()
     .section
