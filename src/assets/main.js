@@ -75,6 +75,9 @@ $('#fullpage').fullpage({
         }
     }
 });
+$('#arrowAnim').click(function(){
+    $.fn.fullpage.moveSectionDown();
+});
 $('#fullpage-partners').fullpage({
     verticalCentered: false,
     lockAnchors: true,
