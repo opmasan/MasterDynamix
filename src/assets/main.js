@@ -23,23 +23,25 @@ $('#fullpage').fullpage({
         particlesJS.load('particles-js', 'assets/particles.json', function() {
             console.log('callback - particles.js config loaded');
         });
+
+        jQuery('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 650,
+            autoplay: true,
+            prevArrow: '<span class="slick-prev"><i class="fas fa-chevron-left fa-2x"></i></span>',
+            nextArrow: '<span class="slick-next"><i class="fas fa-chevron-right fa-2x"></i></span>',
+            autoplaySpeed: 4000,
+
+        });
+
     },
-    afterLoad: function(anchorLink, index){
+    afterLoad: function(anchorLink){
         //using anchorLink
         if(anchorLink == 'last'){
             $('*[data-open="popup-trigger"]').addClass('not-active')
         } else {
             $('*[data-open="popup-trigger"]').removeClass('not-active')
-        }
-        if(index == 3){
-            jQuery('.slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 650,
-                autoplay: true,
-                autoplaySpeed: 4000,
-
-            });
         }
     },
     onLeave: function(index, nextIndex, direction) {
