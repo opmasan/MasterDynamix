@@ -2,12 +2,12 @@ mixin b-tech()
 	+b.tech
 		.container
 			h1 Our Expertise
-			.row
-				.col-sm-6.col-md-6
+			.row.fourth
+				.col-sm-6.col-md-6.is-animated
 					+e.block
 						+e('h3').title  Frond End
 						+e('img').image(src='/assets/images/technologies/frontEnd.svg')
-				.col-sm-6.col-md-6
+				.col-sm-6.col-md-6.is-animated
 					+e.block
 						+e('h3').title  Back End
 						+e('img').image(src='/assets/images/technologies/backEnd.svg')

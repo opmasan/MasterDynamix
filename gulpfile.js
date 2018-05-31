@@ -84,7 +84,7 @@ var reload = function(done){
 
 gulp.task('copy', function(){
 	return gulp.src([
-			'src/assets/**/*.{jpg,png,jpeg,svg,gif,mp4}'
+			'src/assets/**/*.{jpg,png,jpeg,svg,gif,mp4,json}'
 		])
 	.pipe(gulp.dest('build/assets'))
 });

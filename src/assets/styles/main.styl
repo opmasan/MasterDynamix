@@ -4,14 +4,16 @@ body
 	font-size 18px
 	font-weight 500
 	line-height 1.5
-	font-family futura
+	//font-family futura
+	font-family openSans
 	@media (max-width 1600px)
 		font-size 17px
 	@media (max-width 1366px)
 		font-size 15px
 input,
 textarea
-	font-family futura
+	//font-family futura
+	font-family openSans
 
 *
 	box-sizing border-box
@@ -114,29 +116,34 @@ button
 .animate
 	transition all 0.3s
 
-.we-can-block
-	display flex
-	flex-direction column
-	justify-content space-between
-	align-items center
-	padding  20px
-	height 170px
+//.we-can-block
+//	display flex
+//	flex-direction column
+//	justify-content space-between
+//	align-items center
+//	padding  20px
+//	height 170px
+//
+//	&:nth-child(odd)
+//		flex-direction column-reverse
+//	h3
+//		text-align center
+//		display flex
+//		height 50px
+//		justify-content center
+//		align-items center
+//	.fa-2x
+//		position relative
+//		color color-green
+//		&:after
+//			content ''
+//			position absolute
+//			display block
+//			width 2px
+//			background-color color-green
+//			height 50px
 
-	&:nth-child(odd)
-		flex-direction column-reverse
-	h3
-		text-align center
-		display flex
-		height 50px
-		justify-content center
-		align-items center
-	.fa-2x
-		position relative
-		color color-green
-		&:after
-			content ''
-			position absolute
-			display block
-			width 2px
-			background-color color-green
-			height 50px
+.bg
+	background-image url("images/1.svg")
+	background-size cover
+	background-repeat no-repeat

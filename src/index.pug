@@ -9,36 +9,40 @@ block content
   +b-header(headerMenu, activeMenuIndex)
   #fullpage
     +b-main-video()
-    .section.key-to-success
-        .container
+    .section.key-to-success.bg
+        .container.second
           .row
-            .col-md-12
+            .col-md-12.is-animated
                 h1 Your success is the key
                 p Here at MasterDynamix we prefer a long-term partnership with our clients.
                 p Focusing on your business goals helps us better understand the keys to your project's success.
 
-            .col-md-12
+            .col-md-12.is-animated
               .padding-top-lg
                 a.btn.btn-main(data-open='popup-trigger', style='margin-right: 5px;') Reach us
                 |  to get more details
     .section
-      .container
-        h1 Our team
-        +b-slider(teamSlides)
-    .section
-      .container
-        h1 Our team
-        .row.padding-top-lg
-          each block in teamSlides
-            .col-md-3.we-can-block
-              i(class=block.icon)
-              h3=block.title
+      #particles-js
+      div(style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center;')
+        .container.third
+          .is-animated
+            h1 Our team
+          .is-animated
+            +b-slider(teamSlides)
+    //.section
+    //  .container
+    //    h1 Our team
+    //    .row.padding-top-lg
+    //      each block in teamSlides
+    //        .col-md-3.we-can-block
+    //          i(class=block.icon)
+    //          h3=block.title
     .section
       +b-tech()
     .section
       .footer-block
-        .container
-          .wrapper.padding-top-xl
+        .container.fifth
+          .wrapper.padding-top-xl.is-animated
             .offset-md-3.col-md-6
               +b-reach-us-form(class="dark", action="https://script.google.com/macros/s/AKfycbxkT2Izj7bF1MNnlq9Q_K_YMfUATGmcnbLjhSO9/exec")
         .container
