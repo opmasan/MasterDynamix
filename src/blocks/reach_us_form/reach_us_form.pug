@@ -1,14 +1,15 @@
 mixin b-reach-us-form()
 	h1.main-heading reach us
-	form#gform.signup-form(
+	form.signup-form(
 		class!=attributes.class,
+		id!=attributes.id,
 		method="post",
 		action!=attributes.action
 	)
-		input#reachUsName(type="text",name="name", placeholder="Name",autocomplete="off")
-		input#reachUsEmail(type="email",name="email", placeholder="Email Address", autocomplete="off")
-		textarea(name="message", placeholder="Tell us about your idea")
-		button.btn.btn-outline.submit-btn: span Submit
-	#thankyou_message(style='display:none;')
+		input#reachUsName(type="text",name="name", placeholder="Name",autocomplete="off", tabindex="1")
+		input#reachUsEmail(type="email",name="email", placeholder="Email Address", autocomplete="off", tabindex="2")
+		textarea(name="message", placeholder="Tell us about your idea", tabindex="3")
+		button.btn.btn-outline.submit-btn(tabindex="4"): span Submit
+	div(style='display:none;', id!=attributes.message_id)
 		h2
 			em Thanks for contacting us! We will get back to you soon!
